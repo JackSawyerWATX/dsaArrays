@@ -7,7 +7,10 @@ This repository contains Python implementations of basic array operations and so
 - `arrays.py`: Demonstrates basic array operations including finding minimum and maximum values, array length, and element access.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
+- `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
+- `improvedInsertionSort.py`: An optimized insertion sort implementation using in-place shifting and early termination for better performance.
 - `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
+- `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 
 ## Requirements
 
@@ -21,7 +24,10 @@ Run the scripts directly with Python:
 python arrays.py
 python bubbleSort.py
 python bubbleSortImprovement.py
+python insertionSort.py
+python improvedInsertionSort.py
 python selectionSort.py
+python selectionSwapSort.py
 ```
 
 ### arrays.py
@@ -46,6 +52,20 @@ This script shows an optimized bubble sort implementation:
 - Terminates early if no swaps are made, indicating the array is already sorted
 - Demonstrates performance optimization techniques for sorting algorithms
 
+### insertionSort.py
+This script demonstrates basic insertion sort:
+- Builds the sorted array one element at a time
+- For each element, finds its correct position in the already-sorted portion
+- Uses pop and insert operations to move elements into place
+- Efficient for small datasets and nearly sorted arrays (O(n) in best case)
+
+### improvedInsertionSort.py
+This script shows an optimized insertion sort implementation:
+- Uses in-place shifting instead of pop/insert operations for better efficiency
+- Implements early termination when the correct position is found
+- Shifts larger elements to the right during the search phase
+- Provides better performance than basic insertion sort, especially on partially sorted data
+
 ### selectionSort.py
 This script demonstrates selection sort:
 - Iterates through the array, finding the minimum element in each pass
@@ -53,12 +73,20 @@ This script demonstrates selection sort:
 - Builds the sorted array from left to right
 - Always performs O(n²) comparisons, making it predictable but less efficient than optimized bubble sort on nearly sorted data
 
+### selectionSwapSort.py
+This script shows an alternative selection sort implementation:
+- Uses direct element swapping instead of pop/insert operations
+- Finds the minimum element in each pass and swaps it directly with the current position
+- Demonstrates different approaches to implementing the same sorting algorithm
+- Maintains the same O(n²) time complexity as other selection sort variants
+
 ## Learning Objectives
 
 - Understanding basic array operations in Python
-- Implementing and understanding multiple sorting algorithms (bubble sort and selection sort)
-- Algorithm optimization techniques (early termination)
-- Time complexity analysis (both algorithms are O(n²) in worst case, with bubble sort potentially O(n) in best case)
+- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, and selection sort)
+- Exploring different implementation approaches for the same algorithm
+- Algorithm optimization techniques (early termination, in-place operations)
+- Time complexity analysis (O(n²) worst case for all algorithms, with variations in best case performance)
 - Nested loop patterns in sorting algorithms
 - Performance improvements through algorithmic enhancements
 - Comparing different sorting approaches and their trade-offs
