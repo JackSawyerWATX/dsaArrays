@@ -38,3 +38,32 @@ print(array)
 # 12. Base case: when low >= high, subarray has 0 or 1 elements (already sorted)
 # 13. Process continues until all subarrays are sorted
 # 14. Print the final sorted array
+
+
+def partition2(array, low, high):
+  pivot = len(array) / 2
+  i = low - 1
+
+  for j in range(low, high):
+    if array[j] <= pivot:
+      i += 1
+      array[i], array[j] = array[j], array[i]
+      return i + 1
+    
+def quicksort1(array, low = 0, high = None):
+  if high is None:
+    high = len(array) - 1
+
+  if low < high:
+    pivotIndex = partition(array, low, high)
+    quicksort1(array, low, pivotIndex - 1)
+    quicksort1(array, pivotIndex + 1, high)
+
+array = [678, 345, 789, 123, 890, 234, 901, 456, 567]
+quicksort1(array)
+print(array)
+
+
+# this algo chooses the middle of the array to be to be the pivot
+# by choosing the length of the array and dividing it in half. This
+# resulted in a faster running algo.
