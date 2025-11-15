@@ -75,6 +75,7 @@ This script demonstrates the quick sort algorithm:
 - Recursively sorts the left and right subarrays
 - Generally performs in O(n log n) time, much faster than O(n²) algorithms for large datasets
 - In-place sorting with no additional memory requirements
+- Note: Alternative implementations can choose the pivot as the middle element (halfway point) of the array for potentially better performance on certain data distributions
 
 ### selectionSort.py
 This script demonstrates selection sort:
