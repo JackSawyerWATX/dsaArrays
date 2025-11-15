@@ -7,6 +7,7 @@ This repository contains Python implementations of basic array operations and so
 - `arrays.py`: Demonstrates basic array operations including finding minimum and maximum values, array length, and element access.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
+- `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
 - `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
 - `improvedInsertionSort.py`: An optimized insertion sort implementation using in-place shifting and early termination for better performance.
 - `quickSort.py`: Implements the quick sort algorithm using divide-and-conquer approach with partitioning.
@@ -25,6 +26,7 @@ Run the scripts directly with Python:
 python arrays.py
 python bubbleSort.py
 python bubbleSortImprovement.py
+python countingSort.py
 python insertionSort.py
 python improvedInsertionSort.py
 python quickSort.py
@@ -53,6 +55,14 @@ This script shows an optimized bubble sort implementation:
 - Adds a flag to track if any swaps occurred in a pass
 - Terminates early if no swaps are made, indicating the array is already sorted
 - Demonstrates performance optimization techniques for sorting algorithms
+
+### countingSort.py
+This script demonstrates the counting sort algorithm:
+- A non-comparison based sorting algorithm that counts occurrences of each element
+- Creates a frequency array to track how many times each value appears
+- Rebuilds the array in sorted order using the frequency counts
+- Performs in O(n + k) time where k is the range of input values
+- Most efficient when the range of input values is small compared to the array size
 
 ### insertionSort.py
 This script demonstrates basic insertion sort:
@@ -93,11 +103,12 @@ This script shows an alternative selection sort implementation:
 ## Learning Objectives
 
 - Understanding basic array operations in Python
-- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, and quick sort)
+- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, quick sort, and counting sort)
 - Exploring different implementation approaches for the same algorithm
 - Algorithm optimization techniques (early termination, in-place operations)
-- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n) efficient algorithms)
+- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n) and O(n + k) linear algorithms)
 - Divide-and-conquer algorithmic patterns
+- Non-comparison based sorting algorithms
 - Nested loop patterns in sorting algorithms
 - Performance improvements through algorithmic enhancements
 - Comparing different sorting approaches and their trade-offs
