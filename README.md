@@ -9,6 +9,7 @@ This repository contains Python implementations of basic array operations and so
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
 - `improvedInsertionSort.py`: An optimized insertion sort implementation using in-place shifting and early termination for better performance.
+- `quickSort.py`: Implements the quick sort algorithm using divide-and-conquer approach with partitioning.
 - `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 
@@ -26,6 +27,7 @@ python bubbleSort.py
 python bubbleSortImprovement.py
 python insertionSort.py
 python improvedInsertionSort.py
+python quickSort.py
 python selectionSort.py
 python selectionSwapSort.py
 ```
@@ -66,6 +68,14 @@ This script shows an optimized insertion sort implementation:
 - Shifts larger elements to the right during the search phase
 - Provides better performance than basic insertion sort, especially on partially sorted data
 
+### quickSort.py
+This script demonstrates the quick sort algorithm:
+- Uses a divide-and-conquer approach for efficient sorting
+- Selects a pivot element and partitions the array around it
+- Recursively sorts the left and right subarrays
+- Generally performs in O(n log n) time, much faster than O(n²) algorithms for large datasets
+- In-place sorting with no additional memory requirements
+
 ### selectionSort.py
 This script demonstrates selection sort:
 - Iterates through the array, finding the minimum element in each pass
@@ -83,10 +93,11 @@ This script shows an alternative selection sort implementation:
 ## Learning Objectives
 
 - Understanding basic array operations in Python
-- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, and selection sort)
+- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, and quick sort)
 - Exploring different implementation approaches for the same algorithm
 - Algorithm optimization techniques (early termination, in-place operations)
-- Time complexity analysis (O(n²) worst case for all algorithms, with variations in best case performance)
+- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n) efficient algorithms)
+- Divide-and-conquer algorithmic patterns
 - Nested loop patterns in sorting algorithms
 - Performance improvements through algorithmic enhancements
 - Comparing different sorting approaches and their trade-offs
