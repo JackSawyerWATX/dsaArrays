@@ -15,6 +15,7 @@ This repository contains Python implementations of basic array operations and so
 - `radixSort.py`: Implements the radix sort algorithm using digit-by-digit sorting with bucket distribution.
 - `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
+- `simpleMergeSort.py`: A simplified implementation of merge sort with inlined merging logic and minimal variable names.
 
 ## Requirements
 
@@ -36,6 +37,7 @@ python quickSort.py
 python radixSort.py
 python selectionSort.py
 python selectionSwapSort.py
+python simpleMergeSort.py
 ```
 
 ### arrays.py
@@ -91,12 +93,22 @@ This script demonstrates the merge sort algorithm:
 - Requires O(n) additional space for the merging process
 - Excellent for large datasets and external sorting scenarios
 
+### simpleMergeSort.py
+This script provides a simplified implementation of merge sort:
+- Inlines the merging logic directly within the main function
+- Uses concise variable names for a more compact implementation
+- Maintains the same divide-and-conquer approach and performance characteristics
+- Demonstrates how merge sort can be implemented with fewer lines of code
+- Still achieves O(n log n) time complexity and O(n) space complexity
+- Includes step-by-step comments explaining the algorithm's execution
+
 ### quickSort.py
 This script demonstrates the quick sort algorithm:
 - Uses a divide-and-conquer approach for efficient sorting
 - Selects a pivot element and partitions the array around it
 - Recursively sorts the left and right subarrays
-- Generally performs in O(n log n) time, much faster than O(n²) algorithms for large datasets
+- Generally performs in O(n log n) time, much faster than O(n²) algorithms for large 
+datasets
 - In-place sorting with no additional memory requirements
 
 ### radixSort.py
@@ -105,7 +117,8 @@ This script demonstrates the radix sort algorithm:
 - Uses 10 buckets (0-9) to distribute elements based on each digit's value
 - Processes digits from least significant (units place) to most significant
 - Stable sort that maintains relative order of equal elements
-- Performs in O(d × (n + b)) time where d is digits, n is elements, and b is buckets (10)
+- Performs in O(d × (n + b)) time where d is digits, n is elements, and b is buckets 
+(10)
 - Most efficient for sorting numbers with many digits but limited range
 
 ### selectionSort.py
@@ -113,22 +126,26 @@ This script demonstrates selection sort:
 - Iterates through the array, finding the minimum element in each pass
 - Swaps the minimum element with the first unsorted element
 - Builds the sorted array from left to right
-- Always performs O(n²) comparisons, making it predictable but less efficient than optimized bubble sort on nearly sorted data
+- Always performs O(n²) comparisons, making it predictable but less efficient than 
+optimized bubble sort on nearly sorted data
 
 ### selectionSwapSort.py
 This script shows an alternative selection sort implementation:
 - Uses direct element swapping instead of pop/insert operations
-- Finds the minimum element in each pass and swaps it directly with the current position
+- Finds the minimum element in each pass and swaps it directly with the current 
+position
 - Demonstrates different approaches to implementing the same sorting algorithm
 - Maintains the same O(n²) time complexity as other selection sort variants
 
 ## Learning Objectives
 
 - Understanding basic array operations in Python
-- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, merge sort, quick sort, counting sort, and radix sort)
+- Implementing and understanding multiple sorting algorithms (bubble sort, insertion 
+sort, selection sort, merge sort, quick sort, counting sort, and radix sort)
 - Exploring different implementation approaches for the same algorithm
 - Algorithm optimization techniques (early termination, in-place operations)
-- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n), O(n + k), and O(d × (n + b)) algorithms)
+- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n), O(n + k), 
+and O(d × (n + b)) algorithms)
 - Divide-and-conquer algorithmic patterns (merge sort, quick sort)
 - Non-comparison based sorting algorithms (counting sort, radix sort)
 - Stable vs unstable sorting algorithms
