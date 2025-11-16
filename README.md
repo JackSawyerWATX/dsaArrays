@@ -10,6 +10,7 @@ This repository contains Python implementations of basic array operations and so
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
 - `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
 - `improvedInsertionSort.py`: An optimized insertion sort implementation using in-place shifting and early termination for better performance.
+- `mergeSort.py`: Implements the merge sort algorithm using divide-and-conquer with separate merge function.
 - `quickSort.py`: Implements the quick sort algorithm using divide-and-conquer approach with partitioning.
 - `radixSort.py`: Implements the radix sort algorithm using digit-by-digit sorting with bucket distribution.
 - `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
@@ -30,6 +31,7 @@ python bubbleSortImprovement.py
 python countingSort.py
 python insertionSort.py
 python improvedInsertionSort.py
+python mergeSort.py
 python quickSort.py
 python radixSort.py
 python selectionSort.py
@@ -80,6 +82,15 @@ This script shows an optimized insertion sort implementation:
 - Shifts larger elements to the right during the search phase
 - Provides better performance than basic insertion sort, especially on partially sorted data
 
+### mergeSort.py
+This script demonstrates the merge sort algorithm:
+- Uses divide-and-conquer approach to recursively split the array into halves
+- Employs a separate merge function to combine sorted subarrays
+- Stable sort that maintains relative order of equal elements
+- Consistently performs in O(n log n) time across all cases (worst, average, best)
+- Requires O(n) additional space for the merging process
+- Excellent for large datasets and external sorting scenarios
+
 ### quickSort.py
 This script demonstrates the quick sort algorithm:
 - Uses a divide-and-conquer approach for efficient sorting
@@ -114,11 +125,11 @@ This script shows an alternative selection sort implementation:
 ## Learning Objectives
 
 - Understanding basic array operations in Python
-- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, quick sort, counting sort, and radix sort)
+- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, merge sort, quick sort, counting sort, and radix sort)
 - Exploring different implementation approaches for the same algorithm
 - Algorithm optimization techniques (early termination, in-place operations)
 - Time complexity analysis (from O(n²) quadratic algorithms to O(n log n), O(n + k), and O(d × (n + b)) algorithms)
-- Divide-and-conquer algorithmic patterns
+- Divide-and-conquer algorithmic patterns (merge sort, quick sort)
 - Non-comparison based sorting algorithms (counting sort, radix sort)
 - Stable vs unstable sorting algorithms
 - Nested loop patterns in sorting algorithms
