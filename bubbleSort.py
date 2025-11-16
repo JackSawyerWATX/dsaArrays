@@ -24,3 +24,19 @@ print(f"The array is {', '.join(map(str, array))}")
 #     right of the smaller number because the algo starts sorting from
 #     the right and works left.
 # 5.  Finally, it prints the array.
+
+
+
+def bubble_sort(arr):
+  n = len(arr)
+
+  for i in range(n):
+    for j in range(0, n - i - 1):
+
+      if arr[j] > arr[j + 1]:
+        arr[j], arr[i] = arr[i], arr[j]
+
+  return arr
+
+arr = [19, 46, 82, 91, 37, 64, 28, 73, 55]
+print("Length of arr[array] is:", arr)
