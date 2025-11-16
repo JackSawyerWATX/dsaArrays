@@ -11,6 +11,7 @@ This repository contains Python implementations of basic array operations and so
 - `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
 - `improvedInsertionSort.py`: An optimized insertion sort implementation using in-place shifting and early termination for better performance.
 - `quickSort.py`: Implements the quick sort algorithm using divide-and-conquer approach with partitioning.
+- `radixSort.py`: Implements the radix sort algorithm using digit-by-digit sorting with bucket distribution.
 - `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 
@@ -30,6 +31,7 @@ python countingSort.py
 python insertionSort.py
 python improvedInsertionSort.py
 python quickSort.py
+python radixSort.py
 python selectionSort.py
 python selectionSwapSort.py
 ```
@@ -86,6 +88,15 @@ This script demonstrates the quick sort algorithm:
 - Generally performs in O(n log n) time, much faster than O(n²) algorithms for large datasets
 - In-place sorting with no additional memory requirements
 
+### radixSort.py
+This script demonstrates the radix sort algorithm:
+- A non-comparison based sorting algorithm that processes numbers digit by digit
+- Uses 10 buckets (0-9) to distribute elements based on each digit's value
+- Processes digits from least significant (units place) to most significant
+- Stable sort that maintains relative order of equal elements
+- Performs in O(d × (n + b)) time where d is digits, n is elements, and b is buckets (10)
+- Most efficient for sorting numbers with many digits but limited range
+
 ### selectionSort.py
 This script demonstrates selection sort:
 - Iterates through the array, finding the minimum element in each pass
@@ -103,12 +114,13 @@ This script shows an alternative selection sort implementation:
 ## Learning Objectives
 
 - Understanding basic array operations in Python
-- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, quick sort, and counting sort)
+- Implementing and understanding multiple sorting algorithms (bubble sort, insertion sort, selection sort, quick sort, counting sort, and radix sort)
 - Exploring different implementation approaches for the same algorithm
 - Algorithm optimization techniques (early termination, in-place operations)
-- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n) and O(n + k) linear algorithms)
+- Time complexity analysis (from O(n²) quadratic algorithms to O(n log n), O(n + k), and O(d × (n + b)) algorithms)
 - Divide-and-conquer algorithmic patterns
-- Non-comparison based sorting algorithms
+- Non-comparison based sorting algorithms (counting sort, radix sort)
+- Stable vs unstable sorting algorithms
 - Nested loop patterns in sorting algorithms
 - Performance improvements through algorithmic enhancements
 - Comparing different sorting approaches and their trade-offs
