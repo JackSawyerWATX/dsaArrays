@@ -17,6 +17,7 @@ This repository contains Python implementations of basic array operations and so
 - `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 - `simpleMergeSort.py`: A simplified implementation of merge sort with inlined merging logic and minimal variable names.
+- `scatterplot.py`: Generates a scatterplot visualization using matplotlib and numpy, demonstrating data visualization concepts.
 
 ## Requirements
 
@@ -40,6 +41,7 @@ python radixSort.py
 python selectionSort.py
 python selectionSwapSort.py
 python simpleMergeSort.py
+python scatterplot.py
 ```
 
 ### arrays.py
@@ -103,6 +105,14 @@ This script provides a simplified implementation of merge sort:
 - Demonstrates how merge sort can be implemented with fewer lines of code
 - Still achieves O(n log n) time complexity and O(n) space complexity
 - Includes step-by-step comments explaining the algorithm's execution
+
+### scatterplot.py
+This script generates a scatterplot visualization:
+- Uses matplotlib and numpy to create data visualizations
+- Generates random data points for demonstration
+- Creates a scatterplot showing the relationship between x and y values
+- Saves the plot as a PNG image file for viewing
+- Demonstrates basic data visualization concepts in Python
 
 ### quickSort.py
 This script demonstrates the quick sort algorithm:
