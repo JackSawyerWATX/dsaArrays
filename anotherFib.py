@@ -5,13 +5,15 @@ zero = 0
 one = 1
 
 print(zero)
+winsound.Beep(800, 100)  # 800 Hz frequency, 100 ms duration
 print(one)
+winsound.Beep(800, 100)  # 800 Hz frequency, 100 ms duration
+
 
 for fibbo in range (18):
   newFibbo = one + zero
 
   print(newFibbo)
-  winsound.Beep(800, 100)  # 800 Hz frequency, 100 ms duration
   zero = one
   one = newFibbo
 
@@ -20,11 +22,11 @@ for fibbo in range (18):
 nothing = 0
 something = 1
 
-for fibsy in range (1000): # this is how many times it will iterate, not the top number it will go to.
+for fibsy in range (10): # this is how many times it will iterate, not the top number it will go to.
   flaps = nothing + something
 
   print(flaps)
-  time.sleep(0.0001)
+  time.sleep(.025)
 
   nothing = something
   something = flaps
@@ -42,3 +44,10 @@ def flapper(n):
 print("+-------------------")
 print("| ",flapper(20))
 print("+-------------------")
+
+
+x = [13, 17, 14, 18, 15, 12, 16,]
+x.append(19)
+print(x)
+x.sort()
+print(x)
