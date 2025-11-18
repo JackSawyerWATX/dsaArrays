@@ -5,6 +5,7 @@ This repository contains Python implementations of basic array operations and so
 ## Files
 
 - `arrays.py`: Demonstrates basic array operations including finding minimum and maximum values, array length, and element access.
+- `pythonQueue.py`: Implements a basic queue data structure using Python lists, demonstrating enqueue, dequeue, and queue operations.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
@@ -29,6 +30,7 @@ Run the scripts directly with Python:
 
 ```bash
 python arrays.py
+python pythonQueue.py
 python bubbleSort.py
 python bubbleSortImprovement.py
 python countingSort.py
@@ -51,6 +53,16 @@ This script creates an array and performs basic operations:
 - Accesses the first element
 - Finds and prints the minimum value
 - Finds and prints the maximum value + 1
+
+### pythonQueue.py
+This script demonstrates a basic queue data structure implementation:
+- Uses Python lists to implement FIFO (First In, First Out) queue operations
+- Shows enqueue operations by appending elements to the end of the queue
+- Demonstrates dequeue by removing elements from the front using pop(0)
+- Displays the first item without removing it
+- Checks if the queue is empty using boolean conversion
+- Shows how to get the current size of the queue using len()
+- Illustrates fundamental queue concepts in data structures
 
 ### bubbleSort.py
 This script demonstrates bubble sort:
