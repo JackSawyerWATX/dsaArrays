@@ -5,6 +5,7 @@ This repository contains Python implementations of basic array operations and so
 ## Files
 
 - `arrays.py`: Demonstrates basic array operations including finding minimum and maximum values, array length, and element access.
+- `binarySearch.py`: Implements the binary search algorithm for efficiently finding elements in a sorted array.
 - `pythonQueueClass.py`: Implements a queue data structure as a Python class with methods for enqueue, dequeue, peek, and size operations.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
@@ -30,6 +31,7 @@ Run the scripts directly with Python:
 
 ```bash
 python arrays.py
+python binarySearch.py
 python pythonQueueClass.py
 python bubbleSort.py
 python bubbleSortImprovement.py
@@ -53,6 +55,16 @@ This script creates an array and performs basic operations:
 - Accesses the first element
 - Finds and prints the minimum value
 - Finds and prints the maximum value + 1
+
+### binarySearch.py
+This script demonstrates the binary search algorithm for efficient element lookup:
+- Implements iterative binary search on a sorted array
+- Uses divide-and-conquer approach to find target values quickly
+- Returns the index of the target element if found, or -1 if not found
+- Achieves O(log n) time complexity, much faster than linear search
+- Requires the array to be sorted before performing the search
+- Shows the importance of preconditions for algorithm correctness
+- Demonstrates logarithmic time complexity concepts in search algorithms
 
 ### pythonQueueClass.py
 This script demonstrates an object-oriented implementation of a queue data structure:
