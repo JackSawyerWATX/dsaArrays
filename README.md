@@ -9,6 +9,7 @@ This repository contains Python implementations of basic array operations and so
 - `linearSearch.py`: Implements the linear search algorithm for finding elements in an unsorted array.
 - `pythonQueueClass.py`: Implements a queue data structure as a Python class with methods for enqueue, dequeue, peek, and size operations.
 - `pythonQueue.py`: Demonstrates basic queue operations using Python lists, showing enqueue, dequeue, and queue management.
+- `stacks.py`: Demonstrates basic stack operations using Python lists, showing push, pop, peek, and stack management.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
@@ -37,6 +38,7 @@ python binarySearch.py
 python linearSearch.py
 python pythonQueueClass.py
 python pythonQueue.py
+python stacks.py
 python bubbleSort.py
 python bubbleSortImprovement.py
 python countingSort.py
@@ -98,6 +100,16 @@ This script demonstrates basic queue operations using Python lists:
 - Shows how to check if the queue is empty using boolean conversion
 - Demonstrates getting the queue size using the len() function
 - Provides a procedural approach to queue operations without classes
+
+### stacks.py
+This script demonstrates basic stack operations using Python lists:
+- Uses a list to implement LIFO (Last In, First Out) stack behavior
+- Shows push operations by appending elements to the end of the list
+- Demonstrates pop operations by removing elements from the end of the list
+- Illustrates peeking at the top element without removing it using negative indexing
+- Shows how to check if the stack is empty using boolean conversion
+- Demonstrates getting the stack size using the len() function
+- Provides a procedural approach to stack operations using built-in list methods
 
 ### bubbleSort.py
 This script demonstrates bubble sort:
