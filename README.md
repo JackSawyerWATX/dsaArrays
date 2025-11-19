@@ -6,7 +6,9 @@ This repository contains Python implementations of basic array operations and so
 
 - `arrays.py`: Demonstrates basic array operations including finding minimum and maximum values, array length, and element access.
 - `binarySearch.py`: Implements the binary search algorithm for efficiently finding elements in a sorted array.
+- `linearSearch.py`: Implements the linear search algorithm for finding elements in an unsorted array.
 - `pythonQueueClass.py`: Implements a queue data structure as a Python class with methods for enqueue, dequeue, peek, and size operations.
+- `pythonQueue.py`: Demonstrates basic queue operations using Python lists, showing enqueue, dequeue, and queue management.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
@@ -32,7 +34,9 @@ Run the scripts directly with Python:
 ```bash
 python arrays.py
 python binarySearch.py
+python linearSearch.py
 python pythonQueueClass.py
+python pythonQueue.py
 python bubbleSort.py
 python bubbleSortImprovement.py
 python countingSort.py
@@ -66,6 +70,15 @@ This script demonstrates the binary search algorithm for efficient element looku
 - Shows the importance of preconditions for algorithm correctness
 - Demonstrates logarithmic time complexity concepts in search algorithms
 
+### linearSearch.py
+This script demonstrates the linear search algorithm for finding elements in arrays:
+- Implements a simple sequential search that checks each element one by one
+- Works on both sorted and unsorted arrays without any preprocessing
+- Returns the index of the target element if found, or -1 if not found
+- Has O(n) time complexity in the worst case, making it less efficient for large arrays
+- Demonstrates the most straightforward search approach
+- Shows the trade-off between simplicity and performance in search algorithms
+
 ### pythonQueueClass.py
 This script demonstrates an object-oriented implementation of a queue data structure:
 - Defines a Queue class with an internal list to store queue elements
@@ -75,6 +88,16 @@ This script demonstrates an object-oriented implementation of a queue data struc
 - Features isEmpty method to check if the queue contains no elements
 - Offers size method to get the current number of items in the queue
 - Demonstrates class-based design patterns for data structures
+
+### pythonQueue.py
+This script demonstrates basic queue operations using Python lists:
+- Uses a simple list to implement FIFO (First In, First Out) queue behavior
+- Shows enqueue operations by appending elements to the end of the list
+- Demonstrates dequeue by removing elements from the front using pop(0)
+- Illustrates peeking at the first element without removing it
+- Shows how to check if the queue is empty using boolean conversion
+- Demonstrates getting the queue size using the len() function
+- Provides a procedural approach to queue operations without classes
 
 ### bubbleSort.py
 This script demonstrates bubble sort:
