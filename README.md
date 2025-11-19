@@ -10,6 +10,7 @@ This repository contains Python implementations of basic array operations and so
 - `pythonQueueClass.py`: Implements a queue data structure as a Python class with methods for enqueue, dequeue, peek, and size operations.
 - `pythonQueue.py`: Demonstrates basic queue operations using Python lists, showing enqueue, dequeue, and queue management.
 - `stacks.py`: Demonstrates basic stack operations using Python lists, showing push, pop, peek, and stack management.
+- `classStack.py`: Implements a stack data structure as a Python class with push, pop, and isEmpty methods.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
@@ -39,6 +40,7 @@ python linearSearch.py
 python pythonQueueClass.py
 python pythonQueue.py
 python stacks.py
+python classStack.py
 python bubbleSort.py
 python bubbleSortImprovement.py
 python countingSort.py
@@ -110,6 +112,16 @@ This script demonstrates basic stack operations using Python lists:
 - Shows how to check if the stack is empty using boolean conversion
 - Demonstrates getting the stack size using the len() function
 - Provides a procedural approach to stack operations using built-in list methods
+
+### classStack.py
+This script demonstrates an object-oriented implementation of a stack data structure:
+- Defines a Stack class with an internal list to store stack elements
+- Implements push method to add items to the top of the stack
+- Provides pop method to remove and return the top item (LIFO)
+- Includes isEmpty method to check if the stack contains no elements
+- Demonstrates class-based design patterns for data structures
+- Shows proper error handling for empty stack operations
+- Illustrates encapsulation of stack operations within a class
 
 ### bubbleSort.py
 This script demonstrates bubble sort:
