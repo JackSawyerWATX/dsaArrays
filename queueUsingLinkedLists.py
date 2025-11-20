@@ -43,7 +43,7 @@ class Queue:
   def printQueue(self):
     temp = self.front
     while temp:
-      print(temp.data, end=".")
+      print(temp.data, end=". ")
       temp = temp.next
     print()
 
@@ -53,14 +53,14 @@ myQueue.enqueue("Item 1")
 myQueue.enqueue("Item 2")
 myQueue.enqueue("Item 3")
 
-print("Queue:", end="")
+print("Queue:", end=" ")
 
 myQueue.printQueue()
 
-print("Dequeued: ", myQueue.dequeue())
-print("Peek: ", myQueue.peek())
-print("isEmpty: ", myQueue.isEmpty())
-print("Size: ", myQueue.size())
+print("Dequeued:", myQueue.dequeue())
+print("Peek:", myQueue.peek())
+print("isEmpty:", myQueue.isEmpty())
+print("Size:", myQueue.size())
 
 
 
