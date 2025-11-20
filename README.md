@@ -9,6 +9,7 @@ This repository contains Python implementations of basic array operations and so
 - `linearSearch.py`: Implements the linear search algorithm for finding elements in an unsorted array.
 - `pythonQueueClass.py`: Implements a queue data structure as a Python class with methods for enqueue, dequeue, peek, and size operations.
 - `pythonQueue.py`: Demonstrates basic queue operations using Python lists, showing enqueue, dequeue, and queue management.
+- `queueUsingLinkedLists.py`: Implements a queue data structure using linked lists with Node class, providing efficient O(1) enqueue and dequeue operations.
 - `stacks.py`: Demonstrates basic stack operations using Python lists, showing push, pop, peek, and stack management.
 - `classStack.py`: Implements a stack data structure as a Python class with push, pop, and isEmpty methods.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
@@ -39,6 +40,7 @@ python binarySearch.py
 python linearSearch.py
 python pythonQueueClass.py
 python pythonQueue.py
+python queueUsingLinkedLists.py
 python stacks.py
 python classStack.py
 python bubbleSort.py
@@ -102,6 +104,18 @@ This script demonstrates basic queue operations using Python lists:
 - Shows how to check if the queue is empty using boolean conversion
 - Demonstrates getting the queue size using the len() function
 - Provides a procedural approach to queue operations without classes
+
+### queueUsingLinkedLists.py
+This script demonstrates a linked list implementation of a queue data structure:
+- Defines a Node class to represent individual elements in the linked list
+- Implements a Queue class using front and rear pointers for efficient operations
+- Provides enqueue method to add elements to the back of the queue (O(1))
+- Offers dequeue method to remove and return elements from the front (O(1))
+- Includes peek method to view the front element without removing it
+- Features isEmpty and size methods for queue status checking
+- Demonstrates proper linked list pointer management and edge case handling
+- Shows memory-efficient implementation without fixed-size limitations
+- Illustrates fundamental data structure concepts with practical implementation
 
 ### stacks.py
 This script demonstrates basic stack operations using Python lists:
