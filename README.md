@@ -25,6 +25,7 @@ This repository contains Python implementations of basic array operations and so
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 - `simpleMergeSort.py`: A simplified implementation of merge sort with inlined merging logic and minimal variable names.
 - `scatterplot.py`: Generates a scatterplot visualization using matplotlib and numpy, demonstrating data visualization concepts.
+- `hashTable.py`: Implements a basic hash table data structure with add, contains, and hash functions.
 
 ## Requirements
 
@@ -56,6 +57,7 @@ python selectionSort.py
 python selectionSwapSort.py
 python simpleMergeSort.py
 python scatterplot.py
+python hashTable.py
 ```
 
 ### arrays.py
@@ -136,6 +138,17 @@ This script demonstrates an object-oriented implementation of a stack data struc
 - Demonstrates class-based design patterns for data structures
 - Shows proper error handling for empty stack operations
 - Illustrates encapsulation of stack operations within a class
+
+### hashTable.py
+This script demonstrates a basic hash table implementation:
+- Defines a HashTable class with an array of buckets for storing key-value pairs
+- Implements a simple hash function using character sum modulo array size
+- Provides add method to insert key-value pairs into the hash table
+- Includes contains method to check if a key exists in the hash table
+- Demonstrates hash table creation, population, and display operations
+- Shows basic collision handling through direct indexing (no chaining)
+- Illustrates fundamental concepts of hash tables and hash functions
+- Includes step-by-step comments explaining the program's execution flow
 
 ### bubbleSort.py
 This script demonstrates bubble sort:
@@ -249,3 +262,5 @@ and O(d × (n + b)) algorithms)
 - Nested loop patterns in sorting algorithms
 - Performance improvements through algorithmic enhancements
 - Comparing different sorting approaches and their trade-offs
+- Understanding hash table data structures and hash functions
+- Basic collision handling concepts in hash tables
