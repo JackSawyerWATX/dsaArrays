@@ -39,4 +39,5 @@ print(contains("Indiana"))
 # 10. Adds "Toht" to the hash table at index hash_function("Toht")
 # 11. Prints the hash value of "Ravenwood" (should be 9)
 # 12. Tests contains("Ravenwood") - should return True since it was added
-# 13. Tests contains("Indiana") - should return False since it was never added 
+# 13. Tests contains("Indiana") - should return False since it was never added
+
