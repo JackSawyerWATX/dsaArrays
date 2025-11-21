@@ -27,6 +27,7 @@ This repository contains Python implementations of basic array operations and so
 - `scatterplot.py`: Generates a scatterplot visualization using matplotlib and numpy, demonstrating data visualization concepts.
 - `hashTable.py`: Implements a basic hash table data structure with add, contains, and hash functions.
 - `HashSets.py`: Implements a hash set data structure with collision handling using bucket lists.
+- `hashMap.py`: Implements a hash map data structure for key-value pairs with collision handling.
 
 ## Requirements
 
@@ -60,6 +61,7 @@ python simpleMergeSort.py
 python scatterplot.py
 python hashTable.py
 python HashSets.py
+python hashMap.py
 ```
 
 ### arrays.py
@@ -162,6 +164,18 @@ This script demonstrates a hash set implementation with collision handling:
 - Features print_set method to display all buckets and their contents
 - Demonstrates hash collisions where multiple items share the same bucket
 - Shows set operations (add, contains, remove) with collision resolution
+- Includes step-by-step comments explaining the program's execution flow
+
+### hashMap.py
+This script demonstrates a hash map implementation for key-value pairs:
+- Defines a SimpleHashMap class with buckets for storing key-value tuples
+- Implements a hash function that sums only numeric characters from keys
+- Provides put method to add or update key-value pairs in buckets
+- Includes get method to retrieve values by key from the appropriate bucket
+- Offers remove method to delete key-value pairs by key
+- Features print_map method to display all buckets and their contents
+- Demonstrates hash collisions where multiple pairs share the same bucket
+- Shows map operations (put, get, remove) with collision handling
 - Includes step-by-step comments explaining the program's execution flow
 
 ### bubbleSort.py
@@ -279,3 +293,4 @@ and O(d × (n + b)) algorithms)
 - Understanding hash table data structures and hash functions
 - Basic collision handling concepts in hash tables
 - Hash set implementations with bucket-based collision resolution
+- Hash map implementations for key-value pair storage
