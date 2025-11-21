@@ -12,6 +12,7 @@ This repository contains Python implementations of basic array operations and so
 - `queueUsingLinkedLists.py`: Implements a queue data structure using linked lists with Node class, providing efficient O(1) enqueue and dequeue operations.
 - `stacks.py`: Demonstrates basic stack operations using Python lists, showing push, pop, peek, and stack management.
 - `classStack.py`: Implements a stack data structure as a Python class with push, pop, and isEmpty methods.
+- `binaryTree.py`: Demonstrates a simple binary tree structure, node linking, and traversal concepts.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
@@ -45,6 +46,7 @@ python pythonQueue.py
 python queueUsingLinkedLists.py
 python stacks.py
 python classStack.py
+python binaryTree.py
 python bubbleSort.py
 python bubbleSortImprovement.py
 python countingSort.py
@@ -140,6 +142,15 @@ This script demonstrates an object-oriented implementation of a stack data struc
 - Demonstrates class-based design patterns for data structures
 - Shows proper error handling for empty stack operations
 - Illustrates encapsulation of stack operations within a class
+ 
+### binaryTree.py
+This script demonstrates a simple binary tree structure:
+- Defines a `TreeNode` class with `data`, `left`, and `right` references
+- Shows manual node linking to build a specific tree and example access patterns
+- Demonstrates common terminology (root, leaf, internal node, height, depth)
+- Explains traversal types: pre-order, in-order, post-order
+- Notes on Binary Search Tree (BST) vs generic binary trees
+- Includes step-by-step comments in `binaryTree.py` that construct the tree and access nodes
 
 ### hashTable.py
 This script demonstrates a basic hash table implementation:
