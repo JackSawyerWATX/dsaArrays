@@ -26,6 +26,7 @@ This repository contains Python implementations of basic array operations and so
 - `simpleMergeSort.py`: A simplified implementation of merge sort with inlined merging logic and minimal variable names.
 - `scatterplot.py`: Generates a scatterplot visualization using matplotlib and numpy, demonstrating data visualization concepts.
 - `hashTable.py`: Implements a basic hash table data structure with add, contains, and hash functions.
+- `HashSets.py`: Implements a hash set data structure with collision handling using bucket lists.
 
 ## Requirements
 
@@ -58,6 +59,7 @@ python selectionSwapSort.py
 python simpleMergeSort.py
 python scatterplot.py
 python hashTable.py
+python HashSets.py
 ```
 
 ### arrays.py
@@ -148,6 +150,18 @@ This script demonstrates a basic hash table implementation:
 - Demonstrates hash table creation, population, and display operations
 - Shows basic collision handling through direct indexing (no chaining)
 - Illustrates fundamental concepts of hash tables and hash functions
+- Includes step-by-step comments explaining the program's execution flow
+
+### HashSets.py
+This script demonstrates a hash set implementation with collision handling:
+- Defines a SimpleHashSet class with buckets implemented as lists
+- Implements a hash function using character sum modulo bucket count
+- Provides add method that prevents duplicate entries in buckets
+- Includes contains method to check membership in the appropriate bucket
+- Offers remove method to delete items from their buckets
+- Features print_set method to display all buckets and their contents
+- Demonstrates hash collisions where multiple items share the same bucket
+- Shows set operations (add, contains, remove) with collision resolution
 - Includes step-by-step comments explaining the program's execution flow
 
 ### bubbleSort.py
@@ -264,3 +278,4 @@ and O(d × (n + b)) algorithms)
 - Comparing different sorting approaches and their trade-offs
 - Understanding hash table data structures and hash functions
 - Basic collision handling concepts in hash tables
+- Hash set implementations with bucket-based collision resolution
