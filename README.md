@@ -14,6 +14,7 @@ This repository contains Python implementations of basic array operations and so
 - `classStack.py`: Implements a stack data structure as a Python class with push, pop, and isEmpty methods.
 - `binaryTree.py`: Demonstrates a simple binary tree structure, node linking, and traversal concepts.
 - `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
+- `preOrderTraversalBinaryTree.py`: Demonstrates pre-order traversal (node, left, right) with a sample tree and printed output.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
 - `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
@@ -48,6 +49,7 @@ python stacks.py
 python classStack.py
 python binaryTree.py
 python bubbleSort.py
+python preOrderTraversalBinaryTree.py
 python bubbleSortImprovement.py
 python countingSort.py
 python insertionSort.py
@@ -151,6 +153,16 @@ This script demonstrates a simple binary tree structure:
 - Explains traversal types: pre-order, in-order, post-order
 - Notes on Binary Search Tree (BST) vs generic binary trees
 - Includes step-by-step comments in `binaryTree.py` that construct the tree and access nodes
+
+### preOrderTraversalBinaryTree.py
+This script demonstrates a pre-order traversal of a binary tree and prints results:
+- Implements `TreeNode` nodes and builds a sample tree (Root, A..G) with left/right links
+- Provides a `preOrderTraversal(node)` function that visits node -> left -> right and prints node values
+- Shows example direct access (`root.right.left.data`) and then runs the traversal on `root`
+- Demonstrates how pre-order visits the root before its subtrees (useful for cloning or prefix expressions)
+- Complexity: traversal visits each node once — O(n) time and O(h) recursion stack space
+- To run: `python preOrderTraversalBinaryTree.py` prints the accessed node value and the pre-order sequence
+
 
 ### hashTable.py
 This script demonstrates a basic hash table implementation:
