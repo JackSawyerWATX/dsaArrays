@@ -17,6 +17,7 @@ This repository contains Python implementations of basic array operations and so
 - `preOrderTraversalBinaryTree.py`: Demonstrates pre-order traversal (node, left, right) with a sample tree and printed output.
 - `preOrderTraversalBinaryTree.py`: Demonstrates pre-order traversal (node, left, right) with a sample tree and printed output.
 - `inOrderTraversal.py`: Demonstrates in-order traversal (left, node, right) with a sample tree and printed output.
+- `postOrderTraversalBinaryTree.py`: Demonstrates post-order traversal (left, right, node) with a sample tree and printed output.
 - `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
 - `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
 - `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
@@ -53,6 +54,7 @@ python binaryTree.py
 python bubbleSort.py
 python preOrderTraversalBinaryTree.py
 python inOrderTraversal.py
+python postOrderTraversalBinaryTree.py
 python bubbleSortImprovement.py
 python countingSort.py
 python insertionSort.py
@@ -174,6 +176,15 @@ This script demonstrates an in-order traversal of a binary tree and prints resul
 - Demonstrates how in-order produces sorted output for Binary Search Trees (useful for ordered data)
 - Complexity: traversal visits each node once — O(n) time and O(h) recursion stack space
 - To run: `python inOrderTraversal.py` prints the accessed node value and the in-order sequence
+
+### postOrderTraversalBinaryTree.py
+This script demonstrates a post-order traversal of a binary tree and prints results:
+- Implements `TreeNode` nodes and builds the same sample tree (Root, A..G) using left/right links
+- Provides a `postOrderTraversal(node)` function that visits left -> right -> node and prints node values
+- Shows example direct access (`root.right.left.data`) and then runs the post-order traversal on `root`
+- Demonstrates how post-order is useful for deletion, cleanup, and postfix expression evaluation
+- Complexity: traversal visits each node once — O(n) time and O(h) recursion stack space
+- To run: `python postOrderTraversalBinaryTree.py` prints the accessed node value and the post-order sequence
 
 
 ### hashTable.py
