@@ -1,6 +1,7 @@
 # DSA Arrays
 
 - `ImplementationOfBinaryTrees.py`: Implements an array-based binary tree representation and shows index-based access to nodes.
+- `depthFirstSearch.py`: Demonstrates array-based depth-first traversals (pre-order, in-order, post-order) and traversal helpers.
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 - `simpleMergeSort.py`: A simplified implementation of merge sort with inlined merging logic and minimal variable names.
 - `scatterplot.py`: Generates a scatterplot visualization using matplotlib and numpy, demonstrating data visualization concepts.
@@ -29,6 +30,7 @@ python bubbleSort.py
 python preOrderTraversalBinaryTree.py
 python inOrderTraversal.py
 python ImplimentationOfBinaryTrees.py
+python depthFirstSearch.py
 python bubbleSortImprovement.py
 python countingSort.py
 python insertionSort.py
@@ -151,6 +153,15 @@ This script demonstrates an array-based binary tree representation:
 - Demonstrates how to compute `root.right.left` via index math and retrieve its value from the array
 - Explains advantages (simple indexing, efficient for complete trees) and limitations (wasted space for sparse trees)
 - Complexity: index arithmetic is O(1); accessing elements is O(1); traversals over the array are O(n)
+
+### depthFirstSearch.py
+This script demonstrates depth-first traversals implemented over an array-based binary tree:
+- Builds a flat `binary_tree_array` and uses `left_child_index(i)` / `right_child_index(i)` to navigate nodes
+- Implements `pre_order_traversal`, `in_order_traversal`, and `post_order_traversal` functions that return traversal lists
+- Contains commented notes explaining common bugs and fixes for in-order and post-order implementations
+- Demonstrates how to call each traversal starting at the root index (0) and collect the node visitation order
+- Complexity: each traversal is O(n) time and O(h) recursion stack space; index math for child access is O(1)
+- To run: `python depthFirstSearch.py` prints pre-order and in-order traversal results (post-order commented out in script)
 
 This script demonstrates an in-order traversal of a binary tree and prints results:
 - Implements `TreeNode` nodes and builds the same sample tree (Root, A..G) using left/right links
