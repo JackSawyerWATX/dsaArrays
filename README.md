@@ -1,31 +1,6 @@
 # DSA Arrays
 
-This repository contains Python implementations of basic array operations and sorting algorithms, focusing on data structures and algorithms (DSA) concepts. It includes both basic implementations and optimized versions to demonstrate algorithm improvements.
-
-## Files
-
-- `arrays.py`: Demonstrates basic array operations including finding minimum and maximum values, array length, and element access.
-- `binarySearch.py`: Implements the binary search algorithm for efficiently finding elements in a sorted array.
-- `linearSearch.py`: Implements the linear search algorithm for finding elements in an unsorted array.
-- `pythonQueueClass.py`: Implements a queue data structure as a Python class with methods for enqueue, dequeue, peek, and size operations.
-- `pythonQueue.py`: Demonstrates basic queue operations using Python lists, showing enqueue, dequeue, and queue management.
-- `queueUsingLinkedLists.py`: Implements a queue data structure using linked lists with Node class, providing efficient O(1) enqueue and dequeue operations.
-- `stacks.py`: Demonstrates basic stack operations using Python lists, showing push, pop, peek, and stack management.
-- `classStack.py`: Implements a stack data structure as a Python class with push, pop, and isEmpty methods.
-- `binaryTree.py`: Demonstrates a simple binary tree structure, node linking, and traversal concepts.
-- `bubbleSort.py`: Implements the basic bubble sort algorithm with detailed comments explaining each step of the sorting process.
-- `preOrderTraversalBinaryTree.py`: Demonstrates pre-order traversal (node, left, right) with a sample tree and printed output.
-- `preOrderTraversalBinaryTree.py`: Demonstrates pre-order traversal (node, left, right) with a sample tree and printed output.
-- `inOrderTraversal.py`: Demonstrates in-order traversal (left, node, right) with a sample tree and printed output.
-- `bubbleSortImprovement.py`: An optimized version of bubble sort that includes early termination when the array becomes sorted, improving performance on nearly sorted arrays.
-- `countingSort.py`: Implements the counting sort algorithm, a non-comparison based sorting method that uses frequency counting.
-- `insertionSort.py`: Implements the basic insertion sort algorithm using pop/insert operations to build a sorted array.
-- `improvedInsertionSort.py`: An optimized insertion sort implementation using in-place shifting and early termination for better performance.
-- `mergeSort.py`: Implements the merge sort algorithm using divide-and-conquer with separate merge function.
-- `mergeSortImplimentation.py`: Another implementation of merge sort demonstrating the algorithm with additional utility functions.
-- `quickSort.py`: Implements the quick sort algorithm using divide-and-conquer approach with partitioning.
-- `radixSort.py`: Implements the radix sort algorithm using digit-by-digit sorting with bucket distribution.
-- `selectionSort.py`: Implements the selection sort algorithm, which finds the minimum element in each pass and places it at the beginning of the unsorted portion.
+- `ImplementationOfBinaryTrees.py`: Implements an array-based binary tree representation and shows index-based access to nodes.
 - `selectionSwapSort.py`: Another implementation of selection sort using direct element swapping instead of pop/insert operations.
 - `simpleMergeSort.py`: A simplified implementation of merge sort with inlined merging logic and minimal variable names.
 - `scatterplot.py`: Generates a scatterplot visualization using matplotlib and numpy, demonstrating data visualization concepts.
@@ -53,6 +28,7 @@ python binaryTree.py
 python bubbleSort.py
 python preOrderTraversalBinaryTree.py
 python inOrderTraversal.py
+python ImplimentationOfBinaryTrees.py
 python bubbleSortImprovement.py
 python countingSort.py
 python insertionSort.py
@@ -167,6 +143,15 @@ This script demonstrates a pre-order traversal of a binary tree and prints resul
 - To run: `python preOrderTraversalBinaryTree.py` prints the accessed node value and the pre-order sequence
 
 ### inOrderTraversal.py
+### ImplimentationOfBinaryTrees.py
+This script demonstrates an array-based binary tree representation:
+- Uses a flat list `binary_tree_array` to store nodes in level-order (breadth-first) with `None` for missing nodes
+- Provides `left_child_index(i)` and `right_child_index(i)` helper functions: `2*i+1` and `2*i+2`
+- Shows safe `get_data(index)` access that returns `None` for out-of-range indices
+- Demonstrates how to compute `root.right.left` via index math and retrieve its value from the array
+- Explains advantages (simple indexing, efficient for complete trees) and limitations (wasted space for sparse trees)
+- Complexity: index arithmetic is O(1); accessing elements is O(1); traversals over the array are O(n)
+
 This script demonstrates an in-order traversal of a binary tree and prints results:
 - Implements `TreeNode` nodes and builds the same sample tree (Root, A..G) using left/right links
 - Provides an `inOrderTraversal(node)` function that visits left -> node -> right and prints node values
