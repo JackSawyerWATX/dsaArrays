@@ -315,4 +315,5 @@ and O(d × (n + b)) algorithms)
 - Implements a `TreeNode` class and `inOrderTraversal(node)` visiting left -> node -> right.
 - In-order produces sorted output only when the tree satisfies BST rules (left < node < right).
 - Ensure `inOrderTraversal(root)` is called and the tree is a valid BST to see ascending output.
+- Adds `search(root, value)`: traverses BST comparing value to node.data and returns the node if found, else `None` (O(h) time on average).
 
