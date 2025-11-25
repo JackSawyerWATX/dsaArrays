@@ -29,3 +29,8 @@ node3.left = node1
 node9.right = node72
 
 inOrderTraversal(root)
+
+
+# 1. `inOrderTraversal` visits left -> node -> right.
+# 2. Output is sorted only when the tree satisfies BST rules (left < node < right).
+# 3. If output isn't sorted: ensure the tree is a BST and that `inOrderTraversal(root)` is called.
