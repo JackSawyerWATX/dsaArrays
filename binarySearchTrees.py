@@ -42,5 +42,6 @@ inOrderTraversal(root)
 
 
 # 1. `inOrderTraversal` visits left -> node -> right.
-# 2. Output is sorted only when the tree satisfies BST rules (left < node < right).
-# 3. If output isn't sorted: ensure the tree is a BST and that `inOrderTraversal(root)` is called.
+# 2. Search function looks for a declaired value.
+# 3. Output is sorted only when the tree satisfies BST rules (left < node < right).
+# 4. If output isn't sorted: ensure the tree is a BST and that `inOrderTraversal(root)` is called.
