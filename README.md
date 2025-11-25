@@ -317,3 +317,8 @@ and O(d × (n + b)) algorithms)
 - Ensure `inOrderTraversal(root)` is called and the tree is a valid BST to see ascending output.
 - Adds `search(root, value)`: traverses BST comparing value to node.data and returns the node if found, else `None` (O(h) time on average).
 
+### reverseString.py
+- Reverses a given string by iterating from the end to the start and building a new string.
+- Usage: run `python reverseString.py` to print the reversed string; the function `reverse(s)` is also available for reuse.
+- Complexity: O(n) time, O(n) additional space. Note: the current implementation initializes the result with a leading space — change the initial value to `''` to avoid the extra leading space.
+
