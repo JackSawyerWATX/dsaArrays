@@ -40,7 +40,6 @@ node9.right = node72
 
 inOrderTraversal(root)
 
-
 # 1. `inOrderTraversal` visits left -> node -> right.
 # 2. Search function looks for a declaired value.
 # 3. Output is sorted only when the tree satisfies BST rules (left < node < right).
