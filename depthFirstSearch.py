@@ -21,7 +21,6 @@ def post_order_traversal(index):
     return []
   return post_order_traversal(left_child_index(index)) + post_order_traversal(right_child_index(index)) + [binary_tree_array[index]]
 
-
 print("Pre-order Traversal:", pre_order_traversal(0))
 print("In-order Traversal:", in_order_traversal(0))
 print("Post-order Traversal:", post_order_traversal(0))
