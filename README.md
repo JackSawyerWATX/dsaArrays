@@ -311,3 +311,8 @@ and O(d × (n + b)) algorithms)
 - Basic collision handling concepts in hash tables
 - Hash set implementations with bucket-based collision resolution
 
+### binarySearchTrees.py
+- Implements a `TreeNode` class and `inOrderTraversal(node)` visiting left -> node -> right.
+- In-order produces sorted output only when the tree satisfies BST rules (left < node < right).
+- Ensure `inOrderTraversal(root)` is called and the tree is a valid BST to see ascending output.
+
