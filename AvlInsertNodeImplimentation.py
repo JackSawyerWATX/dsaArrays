@@ -84,3 +84,42 @@ for letter in letters:
 
 inOrderTraversal(root)
 
+
+# -----------------------------------------------------------------------------
+# Step-by-step operations (what `insert` and rotations do)
+# -----------------------------------------------------------------------------
+# 1) Insert value:
+#    - If `node` is None, create and return a new `TreeNode(data)` (height = 1).
+#    - Otherwise, compare `data` with `node.data` and recurse into the left
+#      subtree (if smaller) or right subtree (if larger).
+#
+# 2) Update height:
+#    - After insertion into a child, recalculate `node.height` as
+#      `1 + max(height(left), height(right))`.
+#
+# 3) Compute balance factor:
+#    - `balance = getHeight(node.left) - getHeight(node.right)`.
+#    - Balance > 1 means left-heavy; balance < -1 means right-heavy.
+#
+# 4) Rebalance with rotations (four cases):
+#    - Left-Left (LL): balance > 1 and balance(left) >= 0 -> `rightRotate(node)`.
+#    - Left-Right (LR): balance > 1 and balance(left) < 0 -> rotate left on
+#      `node.left` then right-rotate `node`.
+#    - Right-Right (RR): balance < -1 and balance(right) <= 0 -> `leftRotate(node)`.
+#    - Right-Left (RL): balance < -1 and balance(right) > 0 -> rotate right on
+#      `node.right` then left-rotate `node`.
+#
+# 5) Rotation details:
+#    - `rightRotate(y)`: promote `y.left` (x) to root of this subtree,
+#      move x.right to y.left, update heights, return new subtree root x.
+#    - `leftRotate(x)`: promote `x.right` (y) to root of this subtree,
+#      move y.left to x.right, update heights, return new subtree root y.
+#
+# 6) Return:
+#    - After possible rotations, return the (possibly new) root of the subtree.
+#
+# 7) Usage / result:
+#    - Repeated `insert` calls keep the tree height-balanced; `inOrderTraversal`
+#      prints nodes in sorted order (alphabetical here) when traversal completes.
+# -----------------------------------------------------------------------------
+
