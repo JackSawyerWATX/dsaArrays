@@ -317,3 +317,8 @@ and O(d × (n + b)) algorithms)
 - Ensure `inOrderTraversal(root)` is called and the tree is a valid BST to see ascending output.
 - Adds `search(root, value)`: traverses BST comparing value to node.data and returns the node if found, else `None` (O(h) time on average).
 
+### AvlInsertNodeImplimentation.py
+- Implements AVL insertion with rotations (LL, LR, RR, RL) and maintains node heights to rebalance the tree.
+- Usage: run `python AvlInsertNodeImplimentation.py` — inserts sample letters and prints an in-order traversal.
+- Complexity: O(log n) per insert on average; rotations rebalance locally to keep tree height logarithmic.
+
